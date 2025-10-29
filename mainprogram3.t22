@@ -1,0 +1,22 @@
+mainprogram test;
+data int32_t aa1, bb2, cy1, cy2, xv3;
+start
+
+scan(aa1);
+scan(bb2);
+
+for aa1 =: cy1 to bb2 do {
+    print(cy1 * cy2);
+}
+
+0 =: xv3;
+
+for 1 =: cy1 to aa1 do {
+    for 1 =: cy2 to bb2 do {
+        xv3 add 1 =: xv3;
+    }
+}
+
+print(xv3);
+
+end

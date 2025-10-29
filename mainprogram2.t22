@@ -1,0 +1,37 @@
+mainprogram test;
+data int32_t aa1, bb2, cc3, mx7;
+start
+
+scan(aa1)
+scan(bb2);
+scan(cc3);
+
+if aa1 > bb2 and aa1 > cc3 {
+    aa1 =: mx7;
+} else if bb2 > aa1 and bb2 > cc3 {
+    bb2 =: mx7;
+} else {
+    cc3 =: mx7;
+}
+
+print(mx7);
+
+if (aa1 eq bb2) and (aa1 eq cc3) and (bb2 eq cc3) {
+    print(1);
+} else {
+    print(0);
+}
+
+if (aa1 < 0) or (bb2 < 0) or (cc3 < 0) {
+    print(-1);
+} else {
+    print(0);
+}
+
+if not (aa1 < (bb2 add cc3)) {
+    print(10);
+} else {
+    print(0);
+}
+
+end

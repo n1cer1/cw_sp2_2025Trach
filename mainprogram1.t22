@@ -1,0 +1,20 @@
+mainprogram test;
+data int32_t aa1, bb2, xx3, yy4;
+start
+
+scan(aa1);
+scan(bb2);
+
+print(aa1 add bb2);
+print(aa1 sub bb2);
+print(aa1 * bb2);
+print(aa1 / bb2);
+print(aa1 % bb2);
+
+aa1 sub bb2 * 10 add aa1 add bb2 / 10 =: xx3;
+xx3 add xx3 % 10 =: yy4;
+
+print(xx3);
+print(yy4);
+
+end
